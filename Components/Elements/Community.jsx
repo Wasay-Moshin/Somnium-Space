@@ -13,10 +13,17 @@ import {
 } from "react-twitter-embed";
 import { TiSocialTwitterCircular } from "react-icons/ti";
 import { FacebookEmbed } from "react-social-media-embed";
-import {RiFacebookCircleLine} from "react-icons/ri"
+import { RiFacebookCircleLine } from "react-icons/ri";
+import {
+  FaTelegramPlane,
+  FaInstagram,
+  FaYoutube,
+  FaMedium,
+  FaLinkedin,
+} from "react-icons/fa";
 function Community() {
   return (
-    <div className="community">
+    <div className="container-fluid community">
       <div className="container">
         <div className="text-center">
           <h3>KEEP IN TOUCH WITH</h3>
@@ -35,22 +42,49 @@ function Community() {
             <div className="text-center mt-3 mb-3">
               <TiSocialTwitterCircular size={"70px"} color={"white"} />
             </div>
-            <TwitterTimelineEmbed
-              sourceType="profile"
-              screenName="saurabhnemade"
-              options={{ height: 400 }}
-            />
+            <div>
+              <TwitterTimelineEmbed
+                sourceType="profile"
+                screenName="saurabhnemade"
+                options={{ height: 450 }}
+              />
+            </div>
           </div>
           <div className="col-md-6">
             <div className="text-center mt-3 mb-4">
-            <RiFacebookCircleLine size={"60px"} color={"white"} />
+              <RiFacebookCircleLine size={"60px"} color={"white"} />
             </div>
             <div style={{ display: "flex", justifyContent: "center" }}>
               <FacebookEmbed
-                url="https://www.facebook.com/SomniumSpace?fref=nf"
+                url="https://www.facebook.com/SomniumSpace"
                 width={500}
+                height={450}
               />
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="social-media mt-5">
+        <div className="hstack gap-5">
+          <div className=" ms-auto">
+            <FaTelegramPlane size={35} color={"white"} />{" "}
+          </div>
+          <div className="vr" />
+          <div>
+            <FaInstagram size={35} color={"white"} />
+          </div>
+          <div className="vr" />
+          <div>
+            <FaYoutube size={35} color={"white"} />
+          </div>
+          <div className="vr" />
+          <div>
+            <FaMedium size={35} color={"white"} />
+          </div>
+          <div className="vr" />
+          <div>
+            {" "}
+            <FaLinkedin size={35} color={"white"} />
           </div>
         </div>
       </div>

@@ -18,6 +18,7 @@
 //     line-height: 0 !important;
 //   }
 // }
+
 .header {
   background-color: #000000;
   .header-button {
@@ -56,25 +57,30 @@
   .header2 {
     line-height: 0;
   }
+  .navbar-toggler {
+    background-color: white;
+  }
   .download {
     display: flex;
     flex-direction: column;
     background-color: black;
-    width: 308px;
+    width: 320px;
     .btn-client {
       background-color: #08f;
-      // border: 4px solid #fff !important;
+      border: none;
+      border: 2px solid rgb(92, 168, 219);
       // background: radial-gradient(circle,#fff 19%,#1290FF 100%);
       -webkit-clip-path: polygon(22% 0, 100% 0, 100% 100%, 11% 100%);
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
     .join {
-      // background-color: #f60;
+      // background-color:
+      border: 2px solid #f60;
       background: linear-gradient(
         90deg,
         #9c2b00 0,
-        #e45600 33%,
+        #e45600 30%,
         #f05d00 40%,
         #f35f00 46%,
         #ee5c00 50%,
@@ -84,18 +90,85 @@
       position: relative;
       -webkit-clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%);
-      padding-top: 13px;
-      padding-bottom: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
       .web {
         background-color: #ff6500 !important;
-        padding: 10px;
+        padding: 8px;
       }
     }
   }
 }
+.hero {
+  background: #00162a;
+  .vd {
+    // padding: 0px;
+  }
+  // .react-multi-carousel-list {
+  //   padding: 0px;
+  // }
+  .img {
+    margin-top: 60px;
+  }
+  p {
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: -3px 3px 12px rgb(0 0 0 / 77%);
+  }
+  .img-bt {
+    position: absolute;
+    margin-top: -25px;
+  }
+  .set {
+    margin-top: 350px;
+  }
+  .img-bt2 {
+    position: absolute;
+  }
+  .text2 {
+    position: relative;
+    margin-left: 115px;
+    margin-top: 10px;
+  }
+  .text {
+    position: relative;
+    margin-left: 115px;
+    margin-top: -24px;
+  }
+  span {
+    text-shadow: 0 0 4px #0fffff;
+    color: #fff;
+    font-family: Sony Sketch EF;
+    font-size: 35px;
+    font-weight: 400;
+    width: 90%;
+    padding-top: 10px;
+    padding-left: 5px;
+    height: 50px;
+    margin-left: 5px;
+    border: none;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(90deg, #13c477, transparent) 1 0;
+  }
+  .hero-footer {
+    align-self: center;
+    display: flex;
+    min-height: 120px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    // width: 100%;
+    // z-index: 1001;
+    box-shadow: 0 9px 10px rgb(0 10 10 / 95%);
+    background-image: linear-gradient(90deg, #555 0, #888 50%, #555);
+  }
+}
 .mechanics {
   padding-top: 20px;
-  background-color: #00162A;
+  background-color: #00162a;
   background-image: url("../Media/Ssbg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -152,13 +225,13 @@
     font-size: 20px;
     font-weight: 600;
   }
-  .vr-img{
+  .vr-img {
     position: relative;
     margin-top: -85px;
     right: 10vw;
     width: calc(18vh + 11vw);
   }
-  .chat{
+  .chat {
     margin-top: -1px;
     right: -7vw;
     position: relative;
@@ -170,12 +243,11 @@
     font-size: 16px;
     font-weight: 500;
   }
-  .Oculus{
+  .Oculus {
     margin-top: -1px;
   }
-
 }
-.Avaliable{
+.Avaliable {
   z-index: 1;
   align-self: center;
   display: flex;
@@ -183,50 +255,55 @@
   align-items: center;
   justify-content: center;
   border: 2px solid #91dbff;
-  background-image: linear-gradient(90deg,rgba(145,219,255,0) 0,rgba(145,219,255,.5) 50%,rgba(145,219,255,0));
-  h6{
+  background-image: linear-gradient(
+    90deg,
+    rgba(145, 219, 255, 0) 0,
+    rgba(145, 219, 255, 0.5) 50%,
+    rgba(145, 219, 255, 0)
+  );
+  h6 {
     text-shadow: 0 0 8px rgb(145 219 255 / 75%);
     color: #fff;
-    font-family:Source Sans Pro;
+    font-family: Source Sans Pro;
     font-size: 30px;
     font-weight: 600;
     margin: 0;
   }
-  .logos{
+  .logos {
     display: flex;
     justify-content: space-between;
   }
 }
-.ingame{
+.ingame {
   padding-top: 30px;
-  background-color: #00162A;
+  background-color: #00162a;
   background-image: url("../Media/Ssbg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  h4{
+  h4 {
     text-shadow: 0 2px 10px rgb(145 219 255 / 75%);
-    color: #fff!important;
+    color: #fff !important;
     font-family: Source Sans Pro;
-    margin: 0!important;
+    margin: 0 !important;
     font-size: 25px;
     font-weight: 500;
   }
-  h1{
+  h1 {
     text-shadow: 0 2px 10px rgb(145 219 255 / 75%);
-    color: #fff!important;
+    color: #fff !important;
     font-family: Source Sans Pro;
-    margin: 0!important;
+    margin: 0 !important;
     font-size: 45px;
     font-weight: 600;
   }
-  h3{
+  h3 {
     color: #b9e7ff;
     font-family: Source Sans Pro;
-    font-size: 2.0rem;
+    font-size: 2rem;
     font-weight: 700;
     margin: 0;
   }
-  p{
+  p {
     color: #fff;
     font-family: Source Sans Pro;
     font-size: 1.1rem;
@@ -234,80 +311,175 @@
     line-height: 28px;
   }
 }
-.patners{
+.patners {
   padding-top: 30px;
-  background-color: #00162A;
+  background-color: #00162a;
   background-image: url("../Media/Ssbg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  h4{
+  h4 {
     text-shadow: 0 2px 10px rgb(145 219 255 / 75%);
-    color: #fff!important;
+    color: #fff !important;
     font-family: Source Sans Pro;
-    margin: 0!important;
-    font-size: 24px!important;
+    margin: 0 !important;
+    font-size: 24px !important;
     letter-spacing: 1.3px;
   }
-  h1{
+  h1 {
     text-shadow: 0 2px 10px rgb(145 219 255 / 75%);
-    color: #fff!important;
+    color: #fff !important;
     font-family: Source Sans Pro;
-    margin: 0!important;
+    margin: 0 !important;
     font-size: 55px;
     font-weight: 600;
     letter-spacing: 1.5px;
   }
-  h3{
+  h3 {
     color: #b9e7ff;
     font-family: Source Sans Pro;
     font-size: 1.7rem;
     font-weight: 700;
     margin: 0;
   }
-  p{
+  p {
     color: #fff;
     font-family: Source Sans Pro;
     font-size: 1.1rem;
     line-height: 20px;
   }
 }
-.community{
+.community {
   padding-top: 30px;
-  padding-bottom: 30px;
   background-image: url("../Media/Ssbg2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  h3{
+  h3 {
     text-shadow: 0 2px 10px rgb(145 219 255 / 75%);
-    color: #fff!important;
+    color: #fff !important;
     font-family: Source Sans Pro;
-    font-size: 26px!important;
-    letter-spacing: 1.3px!important;
+    font-size: 26px !important;
+    letter-spacing: 1.3px !important;
   }
-  h1{
+  h1 {
     text-shadow: 0 2px 10px rgb(145 219 255 / 75%);
-    color: #fff!important;
+    color: #fff !important;
     font-family: Source Sans Pro;
-    font-size: 48px!important;
+    font-size: 48px !important;
     font-weight: 600;
-    letter-spacing: 1.3px!important;
+    letter-spacing: 1.3px !important;
   }
-  h6{
+  h6 {
     text-shadow: 0 2px 10px rgb(145 219 255 / 75%);
-    color: #fff!important;
+    color: #fff !important;
     font-family: Source Sans Pro;
-    font-size: 24px!important;
+    font-size: 24px !important;
     font-weight: 400;
-    letter-spacing: 1.0px!important;
+    letter-spacing: 1px !important;
   }
-  p{
+  p {
     text-shadow: 0 2px 10px rgb(145 219 255 / 75%);
     color: #fff;
     font-family: Source Sans Pro;
     font-size: 20px;
     font-weight: 400;
   }
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    min-height: 75px;
+    max-height: 120px;
+    border: 2px solid #ffbe00;
+    background-image: linear-gradient(
+      90deg,
+      rgba(145, 219, 255, 0) 0,
+      rgba(255, 190, 0, 0.5) 50%,
+      rgba(145, 219, 255, 0)
+    );
+  }
+  .vr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    color: white;
+  }
+}
+.ownership {
+  background-image: url("../Media/bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 40px;
+  h4 {
+    text-shadow: 0 2px 10px rgb(145 219 255 / 75%);
+    color: #fff;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+  }
+  h1 {
+    text-shadow: 0 2px 10px rgb(145 219 255 / 75%);
+    color: #fff;
+    font-family: Source Sans Pro;
+    font-size: 48px;
+    font-weight: 600;
+  }
+  span {
+    text-shadow: 0 2px 10px rgb(145 219 255 / 75%);
+    color: #fff;
+    font-family: Source Sans Pro;
 
+    font-size: 18px;
+  }
+  .poly {
+    margin-left: 230px;
+  }
+  .hola {
+    margin-left: 360px;
+  }
+  .opensea {
+    margin-top: -30px;
+    margin-left: 380px;
+  }
+  .ft {
+    margin-top: -30px;
+    margin-left: 30px;
+  }
+}
+.calender {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #100000;
+  background-image: url("../Media/bg3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  h4 {
+    text-shadow: 0 2px 10px rgb(145 219 255 / 75%);
+    color: #fff !important;
+    font-family: Source Sans Pro;
+    margin: 0 !important;
+    font-size: 20px;
+    // letter-spacing: 0.6rem;
+  }
+  h1 {
+    text-shadow: 0 2px 10px rgb(145 219 255 / 75%);
+    color: #fff !important;
+    font-family: Source Sans Pro;
+    margin: 0 !important;
+    font-size: 45px;
+    font-weight: 600;
+  }
+  h6 {
+    text-shadow: 0 2px 10px rgb(145 219 255 / 75%);
+    color: #fff !important;
+    font-family: Source Sans Pro;
+    margin: 0 !important;
+    font-size: 18px;
+    letter-spacing: 0.1rem;
+  }
+  .cal{
+    display: flex;
+    justify-content: center;
+  }
 }
 .footer {
   padding-top: 20px;
@@ -327,5 +499,35 @@
     font-family: Source Sans Pro;
     font-size: 20px;
     font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    .set1 {
+      display: none;
+    }
+    .set {
+      display: none;
+    }
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .mechanics {
+    .lcd {
+      right: 10vw;
+    }
+    .mech2 {
+      margin-top: 80px;
+    }
+    .pc-vr {
+      margin-top: 10px;
+      margin-bottom: 90px;
+    }
+    .Oculus {
+      margin-left: 90px;
+    }
   }
 }

@@ -32,21 +32,21 @@ function Mechanics() {
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-3 col-3">
+        <div className="row mech2">
+          <div className="col-md-3 col-10">
             <img className="img-fluid lcd" src="Assets/lcd.png" alt="" />
             <div className="text-end chat">
               <p>Chat, Build,</p>
               <p>Trade in dedicated Somnium PC client</p>
             </div>
           </div>
-          <div className="col-md-6 col-6">
+          <div className="col-md-6 col-12">
             <div className="pc-vr">
               <p>PC VR Mode</p>
               <p>Live Inside Somnium World</p>
             </div>
           </div>
-          <div className="col-md-3 col-3">
+          <div className="col-md-3 col-10">
             <img className="img-fluid vr-img" src="Assets/Vr.png" alt="" />
             <div className="text-start Oculus ">
               <p>Oculus Quest</p>
