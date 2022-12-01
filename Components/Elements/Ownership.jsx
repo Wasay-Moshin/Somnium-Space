@@ -5,8 +5,10 @@ function Ownership() {
     <div className="ownership">
       <div className="container">
         <div className="row">
-          <img src="Assets/blue blur.png" alt="" />
-          <div className="position-absolute">
+          <div>
+          <img src="Assets/blue blur.png"  className="img-fluid position-absolute" alt="" />
+          </div>
+          <div >
             <div className="text-center mt-5">
               <h4>True Ownership of In-Game Assets on</h4>
               <h1>ETHEREUM & SOLANA BLOCKCHAIN</h1>

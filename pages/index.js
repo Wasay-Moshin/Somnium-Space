@@ -14,7 +14,7 @@ export default function Home() {
     <>
     <Header/>
     <Hero/>
-    <Ownership/>
+    {/* <Ownership/> */}
     <Mechanics/>
     <Ingame/>
     <Patners/>
