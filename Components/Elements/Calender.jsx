@@ -26,10 +26,19 @@ function Calender() {
             <div className="cal">
               <iframe
                 src="https://calendar.google.com/calendar/embed?src=somnium.space.events%40gmail.com"
-                width="700"
-                height="400"
+                width="550"
+                height="300"
                 scrolling="no"
               ></iframe>
+              <div className="row text-center mt-3">
+                <div className="col-md-6">
+                <button className="btn btn-secondary"> Add events</button>
+                </div>
+                <div className="col-md-6">
+                <button className="btn btn-primary">Export Google Calendar</button>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>

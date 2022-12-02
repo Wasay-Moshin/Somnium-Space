@@ -4,7 +4,7 @@ import {FaDiscord,FaFacebookF,FaTwitter, FaInstagram, FaTelegramPlane, FaYoutube
 
 function Header() {
   return (
-    <div className="header d-flex">
+    <div className="header d-flex ">
       <div>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
@@ -87,7 +87,7 @@ function Header() {
         </div>
       </nav>
       </div>
-      <div className="download ">
+      <div className="download">
         <button type="button" className="btn btn-primary btn-client">
           Download VR Client <AiFillWindows size={"30px"} />{" "}
         </button>

@@ -1,8 +1,7 @@
 // import Head from "next/head";
 // import Image from "next/image";
+import Head from "next/head";
 import Mechanics from "../Components/Elements/Mechanics";
-import Footer from "../Components/Layouts/Footer";
-import Header from "../Components/Layouts/Header";
 import Ingame from "../Components/Elements/Ingame";
 import Patners from "../Components/Elements/Patners";
 import Community from "../Components/Elements/Community";
@@ -12,15 +11,13 @@ import Calender from "../Components/Elements/Calender";
 export default function Home() {
   return (
     <>
-    <Header/>
     <Hero/>
-    {/* <Ownership/> */}
+    <Ownership/>
     <Mechanics/>
     <Ingame/>
     <Patners/>
     <Calender/>
     <Community/>
-    <Footer/>
     </>
   );
 }

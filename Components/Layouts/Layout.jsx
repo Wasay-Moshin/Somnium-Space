@@ -1,16 +1,17 @@
+import Head from 'next/head'
 import React from 'react'
 import Footer from './Footer'
 import Header from './Header'
 
-function Layout(props) {
+function Layout({children}) {
   return (
-    <div>
-        {/* <Header/>
-        {
-            props.children
-        }
-        <Footer/> */}
-    </div>
+    <>
+    
+    <Head><title>Somnium Space</title></Head>
+    <Header/>
+    {children}
+    <Footer/>
+    </>
   )
 }
 

@@ -119,9 +119,26 @@ function Hero() {
               <div className=" text">
                 <p>Download</p>
               </div>
-              <img className="img-fluid" src="Assets/round.png" alt="" />
+              <img className="img-fluid" src="Assets/round.png" alt="" width={80} />
               <span>Access CUBEs</span>
             </div>
+            <div className="d-flex justify-content-center mt-3">
+              <div>
+              <img className="img-fluid position-absolute" src="Assets/bt2.png" alt="" width={100}/>
+              <img className="img-fluid position-relative" src="Assets/open sea.png" alt=""  width={100}/>
+              </div>
+              &nbsp;
+              <div>
+              <img className="img-fluid position-absolute" src="Assets/bt3.png" alt="" width={100}/>
+              <img className="img-fluid position-relative px-3 mt-2 " src="Assets/uni.png" alt=""  width={100}/>
+              </div>
+              <div>
+              &nbsp;
+              <img className="img-fluid position-absolute" src="Assets/bt2.png" alt="" width={100}/>
+              <img className="img-fluid position-relative px-3 mt-2" src="Assets/gemi.png" alt=""  width={100}/>
+              </div>
+            </div>
+          
           </div>
         </div>
         <div className="row hero-footer">
